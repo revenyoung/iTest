@@ -21,6 +21,14 @@
 		C9641D9E18AE4149003ABB9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9641D8018AE4149003ABB9C /* UIKit.framework */; };
 		C9641DA618AE4149003ABB9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9641DA418AE4149003ABB9C /* InfoPlist.strings */; };
 		C9641DA818AE4149003ABB9C /* iTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9641DA718AE4149003ABB9C /* iTestTests.m */; };
+		C9641DB618B0B9B4003ABB9C /* TabDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C9641DB518B0B9B4003ABB9C /* TabDatePicker.m */; };
+		C9641DB818B0F87D003ABB9C /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9641DB718B0F87D003ABB9C /* PropertyList.plist */; };
+		C9641DBB18B1055B003ABB9C /* TabPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9641DBA18B1055B003ABB9C /* TabPickerView.m */; };
+		C9641DC018B50817003ABB9C /* TabTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9641DBF18B50817003ABB9C /* TabTableViewController.m */; };
+		C9641DC118B50BE6003ABB9C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9641DBC18B507D9003ABB9C /* libsqlite3.dylib */; };
+		C9641DC618B9D754003ABB9C /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C9641DC518B9D754003ABB9C /* Player.m */; };
+		C9641DC918B9ED64003ABB9C /* TableViewCellPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9641DC818B9ED64003ABB9C /* TableViewCellPlayer.m */; };
+		C9641DCC18BE4430003ABB9C /* PlayerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C9641DCB18BE4430003ABB9C /* PlayerDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,20 @@
 		C9641DA318AE4149003ABB9C /* iTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTestTests-Info.plist"; sourceTree = "<group>"; };
 		C9641DA518AE4149003ABB9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9641DA718AE4149003ABB9C /* iTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTestTests.m; sourceTree = "<group>"; };
+		C9641DB418B0B9B4003ABB9C /* TabDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabDatePicker.h; sourceTree = "<group>"; };
+		C9641DB518B0B9B4003ABB9C /* TabDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabDatePicker.m; sourceTree = "<group>"; };
+		C9641DB718B0F87D003ABB9C /* PropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
+		C9641DB918B1055B003ABB9C /* TabPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabPickerView.h; sourceTree = "<group>"; };
+		C9641DBA18B1055B003ABB9C /* TabPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabPickerView.m; sourceTree = "<group>"; };
+		C9641DBC18B507D9003ABB9C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C9641DBE18B50817003ABB9C /* TabTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTableViewController.h; sourceTree = "<group>"; };
+		C9641DBF18B50817003ABB9C /* TabTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTableViewController.m; sourceTree = "<group>"; };
+		C9641DC418B9D754003ABB9C /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C9641DC518B9D754003ABB9C /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		C9641DC718B9ED64003ABB9C /* TableViewCellPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellPlayer.h; sourceTree = "<group>"; };
+		C9641DC818B9ED64003ABB9C /* TableViewCellPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellPlayer.m; sourceTree = "<group>"; };
+		C9641DCA18BE4430003ABB9C /* PlayerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetails.h; sourceTree = "<group>"; };
+		C9641DCB18BE4430003ABB9C /* PlayerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9641DC118B50BE6003ABB9C /* libsqlite3.dylib in Frameworks */,
 				C9641D7F18AE4149003ABB9C /* CoreGraphics.framework in Frameworks */,
 				C9641D8118AE4149003ABB9C /* UIKit.framework in Frameworks */,
 				C9641D7D18AE4149003ABB9C /* Foundation.framework in Frameworks */,
@@ -101,6 +124,7 @@
 		C9641D7B18AE4149003ABB9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9641DBC18B507D9003ABB9C /* libsqlite3.dylib */,
 				C9641D7C18AE4149003ABB9C /* Foundation.framework */,
 				C9641D7E18AE4149003ABB9C /* CoreGraphics.framework */,
 				C9641D8018AE4149003ABB9C /* UIKit.framework */,
@@ -119,6 +143,18 @@
 				C9641D9218AE4149003ABB9C /* ViewController.m */,
 				C9641D9418AE4149003ABB9C /* Images.xcassets */,
 				C9641D8318AE4149003ABB9C /* Supporting Files */,
+				C9641DB418B0B9B4003ABB9C /* TabDatePicker.h */,
+				C9641DB518B0B9B4003ABB9C /* TabDatePicker.m */,
+				C9641DB918B1055B003ABB9C /* TabPickerView.h */,
+				C9641DBA18B1055B003ABB9C /* TabPickerView.m */,
+				C9641DBE18B50817003ABB9C /* TabTableViewController.h */,
+				C9641DBF18B50817003ABB9C /* TabTableViewController.m */,
+				C9641DC418B9D754003ABB9C /* Player.h */,
+				C9641DC518B9D754003ABB9C /* Player.m */,
+				C9641DC718B9ED64003ABB9C /* TableViewCellPlayer.h */,
+				C9641DC818B9ED64003ABB9C /* TableViewCellPlayer.m */,
+				C9641DCA18BE4430003ABB9C /* PlayerDetails.h */,
+				C9641DCB18BE4430003ABB9C /* PlayerDetails.m */,
 			);
 			path = iTest;
 			sourceTree = "<group>";
@@ -130,6 +166,7 @@
 				C9641D8518AE4149003ABB9C /* InfoPlist.strings */,
 				C9641D8818AE4149003ABB9C /* main.m */,
 				C9641D8A18AE4149003ABB9C /* iTest-Prefix.pch */,
+				C9641DB718B0F87D003ABB9C /* PropertyList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9641D9518AE4149003ABB9C /* Images.xcassets in Resources */,
+				C9641DB818B0F87D003ABB9C /* PropertyList.plist in Resources */,
 				C9641D8718AE4149003ABB9C /* InfoPlist.strings in Resources */,
 				C9641D9018AE4149003ABB9C /* Main.storyboard in Resources */,
 			);
@@ -249,9 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9641DC918B9ED64003ABB9C /* TableViewCellPlayer.m in Sources */,
 				C9641D9318AE4149003ABB9C /* ViewController.m in Sources */,
+				C9641DB618B0B9B4003ABB9C /* TabDatePicker.m in Sources */,
+				C9641DBB18B1055B003ABB9C /* TabPickerView.m in Sources */,
 				C9641D8D18AE4149003ABB9C /* AppDelegate.m in Sources */,
 				C9641D8918AE4149003ABB9C /* main.m in Sources */,
+				C9641DC618B9D754003ABB9C /* Player.m in Sources */,
+				C9641DCC18BE4430003ABB9C /* PlayerDetails.m in Sources */,
+				C9641DC018B50817003ABB9C /* TabTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +504,7 @@
 				C9641DAD18AE4149003ABB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9641DAE18AE4149003ABB9C /* Build configuration list for PBXNativeTarget "iTestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +513,7 @@
 				C9641DB018AE4149003ABB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
