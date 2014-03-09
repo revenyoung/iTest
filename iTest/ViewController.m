@@ -22,6 +22,9 @@
 @synthesize switch_Remember;
 @synthesize stepper_Age;
 @synthesize button_Alter;
+@synthesize button_Loading;
+@synthesize aiView;
+@synthesize pView;
 
 - (void)viewDidLoad
 {
@@ -62,6 +65,54 @@
                        , [segmentControl_Gender titleForSegmentAtIndex:segmentControl_Gender.selectedSegmentIndex]
                        ,slider_Age.value
                        ,state];
+}
+-(IBAction)button_Loading_Click:(id)sender
+{
+    if([aiView isHidden])
+    {
+        [aiView startAnimating];
+    }
+    else
+    {
+        [aiView stopAnimating];
+    }
+    [self startprogress:pView];
+}
+NSTimer* timer;
+/* 启动进度条 */
+-(IBAction)startprogress:(id)sender
+{
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.03f target:self selector:@selector(timeChanged:) userInfo:nil repeats:YES];
+    
+    /*
+     启动一个定时器，间隔时间为0.03s，间隔0.03s即调用self里边的timechanged方法
+     */
+    
+}
+/* 停止进度条，进度都置为零*/
+-(IBAction)stopprogress:(id)sender
+{
+    [timer invalidate];
+    //    [timer release];
+    timer = nil;
+    pView.progress=0.0f;
+    pView.progress=0.0f;
+}
+/* 进度条进度+0.01*/
+-(IBAction)timeChanged:(id)sender
+{
+    
+    pView.progress +=0.01f;
+    pView.progress+=0.01f;
+}
+
+
+CGPoint pt;
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch =  [touches anyObject];
+    pt=[touch locationInView:self.view];
+    NSLog(@"x:%f y:%f", pt.x, pt.y);
 }
 
 -(IBAction)button_Alter_Click:(id)sender

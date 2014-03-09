@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C95E715B18CB06BD000D7797 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E715A18CB06BD000D7797 /* CollectionViewController.m */; };
+		C95E715E18CB0880000D7797 /* Func.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E715D18CB0880000D7797 /* Func.m */; };
+		C95E716118CCB60A000D7797 /* CollectionViewCellFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E716018CCB60A000D7797 /* CollectionViewCellFunc.m */; };
 		C9641D7D18AE4149003ABB9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9641D7C18AE4149003ABB9C /* Foundation.framework */; };
 		C9641D7F18AE4149003ABB9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9641D7E18AE4149003ABB9C /* CoreGraphics.framework */; };
 		C9641D8118AE4149003ABB9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9641D8018AE4149003ABB9C /* UIKit.framework */; };
@@ -42,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C95E715918CB06BD000D7797 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		C95E715A18CB06BD000D7797 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		C95E715C18CB0880000D7797 /* Func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Func.h; sourceTree = "<group>"; };
+		C95E715D18CB0880000D7797 /* Func.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Func.m; sourceTree = "<group>"; };
+		C95E715F18CCB60A000D7797 /* CollectionViewCellFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCellFunc.h; sourceTree = "<group>"; };
+		C95E716018CCB60A000D7797 /* CollectionViewCellFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCellFunc.m; sourceTree = "<group>"; };
 		C9641D7918AE4149003ABB9C /* iTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9641D7C18AE4149003ABB9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9641D7E18AE4149003ABB9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +164,12 @@
 				C9641DC818B9ED64003ABB9C /* TableViewCellPlayer.m */,
 				C9641DCA18BE4430003ABB9C /* PlayerDetails.h */,
 				C9641DCB18BE4430003ABB9C /* PlayerDetails.m */,
+				C95E715918CB06BD000D7797 /* CollectionViewController.h */,
+				C95E715A18CB06BD000D7797 /* CollectionViewController.m */,
+				C95E715C18CB0880000D7797 /* Func.h */,
+				C95E715D18CB0880000D7797 /* Func.m */,
+				C95E715F18CCB60A000D7797 /* CollectionViewCellFunc.h */,
+				C95E716018CCB60A000D7797 /* CollectionViewCellFunc.m */,
 			);
 			path = iTest;
 			sourceTree = "<group>";
@@ -295,6 +310,9 @@
 				C9641D8918AE4149003ABB9C /* main.m in Sources */,
 				C9641DC618B9D754003ABB9C /* Player.m in Sources */,
 				C9641DCC18BE4430003ABB9C /* PlayerDetails.m in Sources */,
+				C95E715B18CB06BD000D7797 /* CollectionViewController.m in Sources */,
+				C95E715E18CB0880000D7797 /* Func.m in Sources */,
+				C95E716118CCB60A000D7797 /* CollectionViewCellFunc.m in Sources */,
 				C9641DC018B50817003ABB9C /* TabTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

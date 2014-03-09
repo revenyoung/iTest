@@ -18,5 +18,8 @@
 @property(retain, nonatomic) IBOutlet UIStepper* stepper_Age;
 @property(retain,nonatomic) IBOutlet UIButton* button_Greet;
 @property(retain,nonatomic) IBOutlet UIButton* button_Alter;
+@property(retain,nonatomic) IBOutlet UIButton* button_Loading;
+@property(retain,nonatomic) IBOutlet UIActivityIndicatorView* aiView;
+@property(retain,nonatomic) IBOutlet UIProgressView* pView;
 
 @end
