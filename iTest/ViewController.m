@@ -25,11 +25,13 @@
 @synthesize button_Loading;
 @synthesize aiView;
 @synthesize pView;
+@synthesize adView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [adView setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -129,5 +131,25 @@ CGPoint pt;
         UITextField *name=[actionSheet textFieldAtIndex:0];
         textField_Name.text=name.text;
     }
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    NSLog(@"bannerview did not receive any banner due to %@", error);
+}
+
+- (void)bannerViewActionDidFinish:(ADBannerView *)banner
+{
+    NSLog(@"bannerview was selected");
+}
+
+- (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave
+{
+    return willLeave;
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    NSLog(@"banner was loaded");
 }
 @end

@@ -10,6 +10,9 @@
 #import <sqlite3.h>
 #import "Func.h"
 #import "CollectionViewCellFunc.h"
+#import "ReusableViewHeader.h"
+#import "ReusableViewFooter.h"
+#import "FuncDetails.h"
 
 @interface CollectionViewController ()
 
@@ -92,7 +95,9 @@ NSMutableArray *dataList;
 }
 //为每个单元设置UI
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
     CollectionViewCellFunc *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    
     
     Func* func=[dataList objectAtIndex:indexPath.item];
     cell.row=func;
@@ -100,6 +105,45 @@ NSMutableArray *dataList;
     return cell;
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *reusableview = nil;
+    
+    if (kind == UICollectionElementKindSectionHeader) {
+        ReusableViewHeader* headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header" forIndexPath:indexPath];
+        NSString *title = [[NSString alloc] initWithFormat:@"Header"];
+        headerView.label_Header.text = title;
+        [headerView setBackgroundColor:[UIColor redColor]];
+        
+        reusableview = headerView;
+    }
+    
+    if (kind == UICollectionElementKindSectionFooter) {
+        ReusableViewFooter* footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"Footer" forIndexPath:indexPath];
+        
+        NSString *title = [[NSString alloc] initWithFormat:@"Footer"];
+        footerView.label_Footer.text = title;
+        [footerView setBackgroundColor:[UIColor greenColor]];
 
+        
+        reusableview = footerView;
+    }
+    
+    return reusableview;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    CollectionViewCellFunc* src=(CollectionViewCellFunc*)sender;
+    FuncDetails* dest=segue.destinationViewController;
+    [dest setValue:src.row forKey:@"row"];
+}
 
 @end

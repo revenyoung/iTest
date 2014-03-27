@@ -119,7 +119,7 @@ NSMutableArray *dataList;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];//选中后的反显颜色即刻消失
-    NSLog(@"%d", indexPath.item);
+    NSLog(@"%ld", (long)indexPath.item);
 }
 
 /*
@@ -193,11 +193,11 @@ NSMutableArray *dataList;
             sqlite3_stmt* statement;
             if (sqlite3_prepare_v2(database, [sqlString UTF8String], -1, &statement, NULL) == SQLITE_OK)
             {
-                sqlite3_bind_text(statement, 1, [item.Gender UTF8String], item.Gender.length, NULL);
-                sqlite3_bind_int(statement, 2, item.Age);
-                sqlite3_bind_blob(statement, 3, item.Photo.bytes, item.Photo.length, NULL);
+                sqlite3_bind_text(statement, 1, [item.Gender UTF8String], (int)item.Gender.length, NULL);
+                sqlite3_bind_int(statement, 2, (int)item.Age);
+                sqlite3_bind_blob(statement, 3, item.Photo.bytes, (int)item.Photo.length, NULL);
                 sqlite3_bind_double(statement, 4, [[NSDate date] timeIntervalSince1970]);
-                sqlite3_bind_text(statement, 5, [item.Name UTF8String], item.Name.length , NULL);
+                sqlite3_bind_text(statement, 5, [item.Name UTF8String], (int)item.Name.length , NULL);
             }
             
             if (sqlite3_step(statement) != SQLITE_DONE)

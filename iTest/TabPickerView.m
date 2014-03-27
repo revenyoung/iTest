@@ -142,7 +142,7 @@ NSMutableDictionary *dict;
 {
     if(buttonIndex==1)
     {
-        int row=[pickerView_List selectedRowInComponent:0];
+        long row=[pickerView_List selectedRowInComponent:0];
         
         NSMutableArray* nameArray=[dict objectForKey:@"NAME"];
         [nameArray removeObjectAtIndex:row];

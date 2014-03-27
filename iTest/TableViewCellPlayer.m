@@ -20,7 +20,7 @@
 {
     label_Name.text=row.Name;
     label_Gender.text=row.Gender;
-    label_Age.text=[[NSString alloc] initWithFormat:@"%d",row.Age ];
+    label_Age.text=[[NSString alloc] initWithFormat:@"%ld",(long)row.Age ];
     imageView_Photo.image=[[UIImage alloc] initWithData:row.Photo];
 }
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

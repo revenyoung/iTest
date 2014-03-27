@@ -44,7 +44,7 @@
         switch_Gender.on=NO;
         
     }
-    textField_Age.text=[[NSString alloc] initWithFormat:@"%d",row.Age];
+    textField_Age.text=[[NSString alloc] initWithFormat:@"%ld",(long)row.Age];
     imageView_Photo.image=[[UIImage alloc] initWithData:row.Photo];
     NSDateFormatter* formatter=[[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd, HH:mm:ss"];

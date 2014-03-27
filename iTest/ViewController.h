@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ADBannerViewDelegate>
 
 @property(retain, nonatomic) IBOutlet UILabel* label_Notice;
 @property(retain,nonatomic) IBOutlet UITextField* textField_Name;
@@ -21,5 +22,6 @@
 @property(retain,nonatomic) IBOutlet UIButton* button_Loading;
 @property(retain,nonatomic) IBOutlet UIActivityIndicatorView* aiView;
 @property(retain,nonatomic) IBOutlet UIProgressView* pView;
+@property(retain,nonatomic) IBOutlet ADBannerView* adView;
 
 @end
